@@ -137,7 +137,7 @@ void display_draw_rectangle(uint16_t x_start, uint16_t y_start, uint16_t x_end, 
     uint16_t y_point;
     if (filled) {
         for (y_point = y_start; y_point < y_end; y_point++) {
-            display_draw_line(x_start, y_point, x_end, y_point, color, line_weight);
+            display_draw_line(x_start, y_point, x_end, y_point, color, 1);
         }
     } else {
         display_draw_line(x_start, y_start, x_end, y_start, color, line_weight);
